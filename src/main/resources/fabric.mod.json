@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "aillieth",
+  "version": "${version}",
+
+  "name": "Aillieth Mod",
+  "description": "Adds some *mysterious* content to the game.",
+  "authors": [
+    "pessiuff"
+  ],
+  "contact": {
+    "sources": "https://github.com/pessiuff/aillieth-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/aillieth/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.pessiuff.aillieth.AilliethMod"
+    ],
+    "client": [
+      "me.pessiuff.aillieth.AilliethModClient"
+    ]
+  },
+  "mixins": [
+    "aillieth.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
