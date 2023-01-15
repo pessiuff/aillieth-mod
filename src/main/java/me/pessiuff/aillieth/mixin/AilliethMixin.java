@@ -10,6 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(TitleScreen.class)
 public class AilliethMixin {
 	@Inject(at = @At("HEAD"), method = "init()V")
+
 	private void init(CallbackInfo info) {
 		AilliethMod.LOGGER.info("Hello from Aillieth mod mixin!");
 	}
